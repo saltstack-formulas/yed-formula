@@ -6,12 +6,9 @@
 {%- from tplroot ~ "/map.jinja" import yed with context %}
 {%- from tplroot ~ "/libtofs.jinja" import files_switch with context %}
 
-include:
-  - yed.jar
-
 yed-config-file-managed-script_file:
   file.managed:
-    - name: {{ yed.dir.jar }}/yed.sh
+    - name: {{ yed.dir.jar }}/bin/yed.sh
     - source: {{ files_switch(['script.sh.jinja'],
                               lookup='yed-config-file-managed-script_file'
                  )
@@ -23,5 +20,3 @@ yed-config-file-managed-script_file:
     - template: jinja
     - context:
         path: {{ yed.config.path|json }}
-    - require:
-      - sls: yed.jar

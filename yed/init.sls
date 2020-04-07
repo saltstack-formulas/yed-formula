@@ -9,4 +9,5 @@ include:
   - .package
              {%- elif yed.pkg.use_upstream_jar  %}
   - .jar
+  - .config
              {%- endif %}

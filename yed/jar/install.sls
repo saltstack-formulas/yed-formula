@@ -25,7 +25,7 @@ yed-package-jar-install-extract:
         - mode
   archive.extracted:
     {{- format_kwargs(yed.pkg.jar) }}
-    - jar_format: {{ yed.pkg.format }}
+    - archive_format: {{ yed.pkg.format }}
     - retry: {{ yed.retry_option }}
     - user: {{ yed.rootuser }}
     - group: {{ yed.rootgroup }}
