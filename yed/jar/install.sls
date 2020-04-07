@@ -3,6 +3,7 @@
 
 {%- set tplroot = tpldir.split('/')[0] %}
 {%- from tplroot ~ "/map.jinja" import yed with context %}
+{%- from tplroot ~ "/files/macros.jinja" import format_kwargs with context %}
 
 include:
   - yed.config.script
