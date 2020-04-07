@@ -25,5 +25,3 @@ yed-config-file-managed-script_file:
         path: {{ yed.config.path|json }}
     - require:
       - sls: yed.jar
-
-    {%- endif %}
