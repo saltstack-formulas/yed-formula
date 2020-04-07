@@ -2,17 +2,18 @@
 # vim: ft=yaml
 ---
 yed:
-  version: 4.5.6
+  version: 3.19.1.1
   rootuser: root
   rootgroup: root
   dir:
-    tmp: /tmp/yed
     jar: /usr/local
+  config: {}
   pkg:
     name: yed
     format: zip
     suffix: zip
     use_upstream_jar: true
+    use_upstream_package: true
     jar:
       uri: https://www.yworks.com/resources/yed/demo
       source: 'set by map.jinja'
