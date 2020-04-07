@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+# vim: ft=yaml
+---
+yed:
+  version: 3.19.1.1
+  pkg:
+    use_upstream_jar: true
+    use_upstream_package: false
+    jar:
+      uri: https://www.yworks.com/resources/yed/demo
+      source_hash: 3639da2650976bffcd43a8ea830727bae86478e95ceb4d68ad6363a42a8f1efb
