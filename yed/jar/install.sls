@@ -10,7 +10,7 @@ include:
 
 yed-package-jar-install-extract:
   pkg.installed:
-    - name: zip
+    - name: unzip
   file.directory:
     - name: {{ yed.pkg.jar.name }}
     - user: {{ yed.rootuser }}
