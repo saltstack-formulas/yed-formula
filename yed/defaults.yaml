@@ -14,8 +14,8 @@ yed:
     suffix: zip
     use_upstream_jar: true
     use_upstream_package: true
+    uri: https://www.yworks.com/resources/yed/demo
     jar:
-      uri: https://www.yworks.com/resources/yed/demo
       source: 'set by map.jinja'
       source_hash: 3639da2650976bffcd43a8ea830727bae86478e95ceb4d68ad6363a42a8f1efb
       trim_output: true
