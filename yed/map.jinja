@@ -20,6 +20,5 @@
 {%- if yed['pkg']['use_upstream_jar'] %}
     {%- set dir = '%s-%s'|format(yed.pkg.name, yed.version) %}
     {%- do yed.config.update({'path': yed.dir.jar + '/' + dir }) %},
-    {%- do yed.pkg.jar.update({'name': yed.dir.jar + '/' + dir,
-           'source': '%s/yEd-%s.%s'|format(yed.pkg.uri, yed.version, yed.pkg.suffix)}) %}
+    {%- do yed.pkg.jar.update({'name': yed.dir.jar, 'source': '%s/yEd-%s.%s'|format(yed.pkg.uri, yed.version, yed.pkg.suffix)}) %}  # noqa 204
 {%- endif %}
