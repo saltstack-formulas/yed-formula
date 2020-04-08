@@ -12,6 +12,7 @@ yed-package-jar-install-extract:
   pkg.installed:
     - name: unzip
   file.directory:
+    - unless: test -d {{ yed.pkg.jar.name }}
     - name: {{ yed.pkg.jar.name }}
     - user: {{ yed.rootuser }}
     - group: {{ yed.rootgroup }}
@@ -19,10 +20,6 @@ yed-package-jar-install-extract:
     - makedirs: True
     - require_in:
       - jar: yed-package-jar-install-extract
-    - recurse:
-        - user
-        - group
-        - mode
   archive.extracted:
     {{- format_kwargs(yed.pkg.jar) }}
     - archive_format: {{ yed.pkg.format }}
