@@ -2,7 +2,7 @@
 
 title 'yed archives profile'
 
-control 'yed binary archive' do
+control 'yed archive' do
   impact 1.0
   title 'should be installed'
 
